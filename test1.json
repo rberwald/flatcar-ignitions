@@ -1,0 +1,24 @@
+{
+    "ignition": { "version": "2.2.0" },
+    "storage": {
+      "files": [{
+        "filesystem": "root",
+        "path": "/etc/hostname",
+        "mode": 420,
+        "contents": { "source": "data:,master1" }
+      }]
+    },
+    "passwd": {
+        "users": [
+          {
+            "name": "core",
+            "passwordHash": "$6$0Q0OrOV9$DogeyamIjW8KXfba5m2T4YKIwidhhTrSmSkR0u91IGzFruHSXmPKPwkdAdf921qK2FRAbi1CereYo1PLCwJLD/",
+            "uid": 1000
+          },
+          {
+            "name": "jenkins",
+            "uid": 1001
+          }
+        ]
+      }
+  }     
